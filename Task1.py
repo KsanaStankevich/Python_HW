@@ -5,4 +5,4 @@
 d = int(input('Введите точность(кол-во знаков после запятой) числа Пи '))
 import math
 ress = round(math.pi, d)
-print(ress) # 3.1
+print(ress)
