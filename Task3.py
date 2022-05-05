@@ -1,17 +1,17 @@
 # Задайте последовательность чисел. Напишите программу, которая выведет 
-# список неповторяющихся элементов исходной последовательности.
+# список неповторяющихся элементов исходной последовательности. (только 1 раз)
 
-mass = [int(x) for x in input('Введите числа массива через пробел ').split()]
+mass = [int(i) for i in input('Введите числа массива через пробел ').split()]
 print(mass)
 
 def unique_mass_num(mass):
     unique = []
 
-    for mass in mass:
-        if mass in unique:
+    for i in mass:
+        if mass.count(i) != 1:
             continue
         else:
-            unique.append(mass)
+            unique.append(i)
     return unique
 
 print(unique_mass_num(mass))
