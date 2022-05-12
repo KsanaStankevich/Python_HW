@@ -8,9 +8,7 @@ def unique_mass_num(mass):
     unique = []
 
     for i in mass:
-        if mass.count(i) != 1:
-            continue
-        else:
+        if mass.count(i) == 1:
             unique.append(i)
     return unique
 

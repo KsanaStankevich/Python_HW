@@ -12,9 +12,8 @@ print(mass)
 
 file = open('Task4.txt', 'a')
 p = k
-for i in mass:
-    while p > 0:
-        file.write(f'{mass[i]}x^{p} +')
-        p = p - 1
-file.write(f' {mass[k]} = 0' + '\n')
+for i in range(len(mass)-1):
+    file.write(f'{mass[i]}x^{p} + ')
+    p = p - 1
+file.write(f'{mass[k]} = 0' + '\n')
 file.close()
