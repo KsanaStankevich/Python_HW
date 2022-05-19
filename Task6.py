@@ -7,19 +7,40 @@
 # b) Подумайте как наделить бота "интеллектом"
 
 # 1. Самый простой
+# import random
+
+# PlayerOne = input('Введите имя первого игрока ')
+# PlayerTwo = input('Введите имя второго игрока ')
+
+# OneTossNumber = random.randint(1, 100)
+# TwoTossNumber = random.randint(1, 100)
+
+# if( OneTossNumber > TwoTossNumber): print(f'{PlayerOne} ходит первый')
+# else: print(f'{PlayerTwo} ходит первый')
 
 # num2 = 2021
+# n = 0
 # while num2 > 0:
 #     num1 = int(input('Введите число до 28: '))
 #     if num1 > 28: print('Атата, число должно быть меньше 28!')
 #     else: 
 #         num2 -= num1
-#         print(num2)
-# print('Вы выиграли!')
+#         print(f'Осталось {num2} конфет')
+#         n = n+1
+# if(n%2==0): print(f'Выиграл {PlayerTwo}')
+# else: print(f'Выиграл {PlayerOne}')
 
 # 2. Против бота
 
 import random
+
+Player = input('Введите имя игрока ')
+PlayerTossNumber = random.randint(1, 100)
+CompTossNumber = random.randint(1, 100)
+
+if( PlayerTossNumber > CompTossNumber): print(f'{Player} ходит первый')
+else: print('Компьютер ходит первый')
+
 num2 = 40
 while num2 > 0:
     num1 = int(input('Введите число до 28: '))
