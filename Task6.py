@@ -34,13 +34,6 @@
 
 import random
 
-Player = input('Введите имя игрока ')
-PlayerTossNumber = random.randint(1, 100)
-CompTossNumber = random.randint(1, 100)
-
-if( PlayerTossNumber > CompTossNumber): print(f'{Player} ходит первый')
-else: print('Компьютер ходит первый')
-
 num2 = 40
 while num2 > 0:
     num1 = int(input('Введите число до 28: '))
