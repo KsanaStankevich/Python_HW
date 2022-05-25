@@ -1,5 +1,5 @@
-from Input import user_select, name, phone
-from Prog import add_employee, save_employee
+from Input import user_select, name, phone, remove
+from Prog import add_employee, save_employee, show, delete
 from Out import get_menu
 
 def start():
@@ -13,8 +13,8 @@ def start():
             user_name = name()
             user_phone = phone()
             add_employee(save_employee(user_name, user_phone))
-        # elif user_sel == 2:
-        #     show_employee.show_employee_list()
-        # elif user_sel == 3:
-        #     delete_employee.delete_employee(employee_list)
-start()
+        elif user_sel == 2:
+            show()
+        elif user_sel == 3:
+            rem = remove()
+            delete(rem)

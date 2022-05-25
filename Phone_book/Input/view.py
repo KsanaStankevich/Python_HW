@@ -6,3 +6,6 @@ def name():
 
 def phone():
     return str(input('Введите номер телефона: '))
+
+def remove():
+    return str(input('Введиме имя сотрудника, которого нужно удалить: '))
